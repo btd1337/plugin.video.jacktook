@@ -65,6 +65,10 @@ def get_search_aggregation_timeout():
     return get_int_setting("search_aggregation_timeout")
 
 
+def get_debrid_cache_wait_timeout():
+    return get_int_setting("debrid_cache_wait_timeout")
+
+
 def trakt_client():
     return get_setting("trakt_client", "")
 
